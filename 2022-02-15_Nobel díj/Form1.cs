@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace _2022_02_15_Nobel_díj
 {
@@ -15,6 +16,11 @@ namespace _2022_02_15_Nobel_díj
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            File.ReadAllLines("orvosi_nobeldijak.txt").ToList();
         }
     }
 }
