@@ -76,6 +76,7 @@ namespace _2022_02_15_Nobel_díj
             this.btnMentés.TabIndex = 4;
             this.btnMentés.Text = "Adatok Mentése\r\n";
             this.btnMentés.UseVisualStyleBackColor = true;
+            this.btnMentés.Click += new System.EventHandler(this.btnMentés_Click);
             // 
             // label1
             // 

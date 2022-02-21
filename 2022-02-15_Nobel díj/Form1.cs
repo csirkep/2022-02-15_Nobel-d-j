@@ -22,5 +22,14 @@ namespace _2022_02_15_Nobel_díj
         {
             File.ReadAllLines("orvosi_nobeldijak.txt").ToList();
         }
+
+        private void btnMentés_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Length < 1 || textBox2.Text.Length < 1 || textBox3.Text.Length < 1 || textBox4.Text.Length < 1)
+            {
+                MessageBox.Show("Töltsön ki minden mezőt!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+        }
     }
 }
